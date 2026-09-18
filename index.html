@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="동국대학교사범대학부속영석고 대입 면접 아카이브" />
+  <title>영석고 대입 면접 아카이브</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="홈으로 이동">
+        <div class="brand-mark" aria-hidden="true">YS</div>
+        <div class="brand-copy">
+          <strong>동국대학교사범대학부속영석고</strong>
+          <span>대입 면접 아카이브</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#types">면접 유형</a>
+        <a href="#search">대학별 면접</a>
+        <a href="#search">면접 후기</a>
+        <a href="#search">공식 자료</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">YEONGSEOK INTERVIEW ARCHIVE</div>
+          <h1>흩어진 면접 자료를<br /><span>한 번에 찾는 대입 면접 검색실</span></h1>
+          <p class="hero-copy">대학·학과·전형·면접 유형을 검색하면 대학 공식자료, 교육청 자료, 실제 면접 후기와 연습자료를 한 화면에서 확인할 수 있습니다.</p>
+          <div class="hero-search">
+            <span class="search-icon">⌕</span>
+            <input id="heroSearch" type="search" placeholder="예: 명지대학교, 화학과, 교과면접, 제시문 면접" autocomplete="off" />
+            <button id="heroSearchButton" type="button">검색</button>
+          </div>
+          <div class="quick-tags">
+            <button data-quick="학생부 기반">학생부 기반</button>
+            <button data-quick="교과면접">교과면접</button>
+            <button data-quick="제시문">제시문 면접</button>
+            <button data-quick="MMI">MMI</button>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="hero-card-badge">2027</div>
+          <h2>면접 준비 흐름</h2>
+          <ol>
+            <li><span>01</span> 지원 대학 면접 구조 확인</li>
+            <li><span>02</span> 공식 기출·공개문항 확인</li>
+            <li><span>03</span> 교육청 자료와 후기 비교</li>
+            <li><span>04</span> 예상질문·꼬리질문 연습</li>
+          </ol>
+          <p>공식자료와 응시자 후기를 구분해 표시합니다.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="types" class="section container">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">INTERVIEW TYPES</span>
+          <h2>면접 유형부터 정확히 이해하기</h2>
+        </div>
+        <p>같은 '면접'이라도 대학과 전형에 따라 준비 방법이 달라집니다.</p>
+      </div>
+
+      <div class="type-grid">
+        <article class="type-card"><div class="type-icon">01</div><h3>학생부 기반 면접</h3><p>학교생활기록부에 기록된 활동을 바탕으로 계기·과정·역할·배운 점·성장을 확인하는 면접입니다.</p><button data-quick="학생부 기반">관련 자료 보기 →</button></article>
+        <article class="type-card"><div class="type-icon">02</div><h3>교과면접</h3><p>학생부교과전형 등에서 실시되는 면접입니다. 대학에 따라 지원동기, 전공 이해, 인성, 공통질문 등을 활용합니다.</p><button data-quick="교과면접">관련 자료 보기 →</button></article>
+        <article class="type-card"><div class="type-icon">03</div><h3>제시문 기반 면접</h3><p>글·표·그래프·상황 자료 등을 읽고 분석한 뒤 제한 시간 안에 논리적으로 설명하는 면접입니다.</p><button data-quick="제시문">관련 자료 보기 →</button></article>
+        <article class="type-card"><div class="type-icon">04</div><h3>MMI · 특수 면접</h3><p>복수의 면접실 또는 상황 과제를 활용하여 인성·윤리·의사소통·판단 등을 다각도로 확인합니다.</p><button data-quick="MMI">관련 자료 보기 →</button></article>
+      </div>
+    </section>
+
+    <section id="search" class="search-section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">SMART SEARCH</span><h2>대학별 면접 자료 통합검색</h2></div>
+          <p>대학명, 학과, 전형, 출처, 연도로 좁혀보세요.</p>
+        </div>
+
+        <div class="search-panel">
+          <div class="search-field search-field-wide"><label for="searchInput">통합검색</label><input id="searchInput" type="search" placeholder="대학·학과·전형·질문 키워드 검색" /></div>
+          <div class="search-field"><label for="universityFilter">대학교</label><select id="universityFilter"><option value="">전체</option></select></div>
+          <div class="search-field"><label for="yearFilter">연도</label><select id="yearFilter"><option value="">전체</option></select></div>
+          <div class="search-field"><label for="typeFilter">면접유형</label><select id="typeFilter"><option value="">전체</option></select></div>
+          <div class="search-field"><label for="sourceFilter">출처</label><select id="sourceFilter"><option value="">전체</option></select></div>
+          <button id="resetButton" class="reset-button" type="button">필터 초기화</button>
+        </div>
+
+        <div class="results-head">
+          <p><strong id="resultCount">0</strong>개의 자료</p>
+          <div class="legend"><span class="badge official">대학 공식</span><span class="badge office">교육청</span><span class="badge review">면접 후기</span><span class="badge practice">연습자료</span></div>
+        </div>
+
+        <div id="results" class="results-grid" aria-live="polite"></div>
+        <div id="emptyState" class="empty-state" hidden><div>검색 결과가 없습니다.</div><p>대학명이나 면접유형을 다른 키워드로 검색해보세요.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><div><strong>동국대학교사범대학부속영석고 대입 면접 아카이브</strong><p>대학 공식자료 · 교육청 자료 · 응시자 후기를 출처별로 구분하여 제공합니다.</p></div><a href="#home">맨 위로 ↑</a></div></footer>
+  <script src="./app.js"></script>
+</body>
+</html>
